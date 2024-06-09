@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ========= common css start ======== */
+*{
+    margin     : 0;
+    padding    : 0;
+    outline    : 0;
+    box-sizing : border-box;
+}
+
+/* ============ common css end ========= */
+/* ========== first page css start ===== */
+.first_page{
+    width           : 100%;
+    height          : 100vh;
+    overflow        : hidden;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+.welcomePage_video{
+    position       : fixed;
+    left           : 0;
+    top            : 0;
+    object-fit     : cover;
+    min-width      : 100%;
+    min-height     : 100%;
+}
+.first_page .content{
+   padding       : 50px;
+    position     : fixed;
+    z-index      : 1;
+    background   : rgb(2, 60, 117);
+    border-radius: 20px;
+    opacity      : 0;
+    animation    : name 1.5s linear forwards;
+}
+@keyframes name{
+    0%{
+        opacity: 0;
+        filter : blur(10px);
+    }
+    100%{
+        opacity: 1;
+        filter : blur(0);
+    }
+}
+.heading{
+    text-align : center;
+}
+.heading h1{
+    font-size   : 43px;
+    font-weight : 900;
+    font-family : "Source Code Pro", monospace;
+    color       : white;
+}
+.heading span{
+    display     : block;
+    color       : #C5FF95;
+    font-weight : 900;
+}
+.start{
+    padding       : 10px 30px;
+    background    : #C5FF95;
+    color         : #033867;
+    border        : 1px solid #C5FF95;
+    border-radius : 8px;
+    font-size     : 20px;
+    font-weight   : 700;
+    font-family   : "Source Code Pro", monospace;
+    transition    : all linear .3s;
+}
+.content{
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    flex-direction  : column;
+    gap             : 60px;
+}
+.start:hover{
+    background : #074173;
+    color      : white;
+}
+.start:active{
+    scale : 1.1;
+}
+
+/* ========= first page css end ================= */
+/* ========= player one name part css start ===== */
+
+.player_one_name{
+    background       : url(../images/Player1.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    width            : 100%;
+    min-height       : 100vh;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    flex-direction   : column;
+    gap              : 20px;
+    display          : none;
+}
+    
+
+.player_one_name h2{
+    font-size     : 24px;
+    font-weight   : 600;
+    font-family   : "Source Code Pro", monospace;
+    color         : beige;
+    text-transform: uppercase;
+}
+.player_one_name .nameOne{
+    font-size     : 16px;
+    font-weight   : 500;
+    color         : #000;
+    padding       : 10px;
+    text-align    : center;
+    border        : none;
+    border-radius : 8px;
+    text-transform: capitalize;
+ }
+.player_one_name .buttonOne{
+    font-size    : 16px;
+    font-weight  : 900;
+    padding      : 10px 30px;
+    border       : 2px solid #FF70AB;
+    border-radius: 6px;
+    background   : #FF70AB;
+    color        : white;
+    transition   : all linear .3s;
+}
+.player_one_name .buttonOne:active{
+    scale : 1.1;
+}
+.player_one_name .buttonOne:hover{
+    background : white;
+    color      : #FF70AB;
+}
+.error{
+    font-size   : 16px;
+    font-weight : 500;
+    font-family : "Source Code Pro", monospace;
+    color       : white;
+
+}
+
+
+/* ====== player one name part css end ===== */
+/* ====== player two name css start ======== */
+.player_two_name{
+    background       :url(../images/Player2.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    width            : 100%;
+    height           : 100vh;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    flex-direction   : column;
+    gap              : 20px;
+    display          : none;
+}
+.player_two_name h2{
+    font-size     : 24px;
+    font-weight   : 600;
+    font-family   : "Source Code Pro", monospace;
+    color         : beige;
+    text-transform: uppercase;
+}
+.player_two_name .nameTwo{
+    font-size    : 16px;
+    font-weight  : 500;
+    color        : #000;
+    padding      : 10px;
+    text-align   : center;
+    border       : none;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+.player_two_name .buttonTwo{
+    font-size     : 16px;
+    font-weight   : 900;
+    padding       : 10px 30px;
+    border        : 2px solid #FF70AB;
+    border-radius : 6px;
+    background    : #FF70AB;
+    color         : white;
+    transition    : all linear .3s;
+}
+.player_two_name .buttonTwo:active{
+    scale : 1.1;
+}
+.player_two_name .buttonTwo:hover{
+    background : white;
+    color      : #FF70AB;
+}
+.error1{
+    font-size   : 16px;
+    font-weight : 500;
+    font-family : "Source Code Pro", monospace;
+    color       : red;
+
+}
+
+/* ======= player two name css start ====== */
+/* ====== player one input css start ====== */
+
+
+.show{
+    font-size     : 43px;
+    font-weight   : 700;
+    font-family   : "Source Code Pro", monospace;
+    color         : orangered;
+    text-transform: capitalize;
+}
+.error2{
+    font-size   : 16px;
+    font-weight : 500;
+    font-family : "Source Code Pro", monospace;
+    color       : red;
+
+}
+.player_one_number{
+    background     : url(../images/player1background.jpg);
+    width          : 100%;
+    height         : 100vh;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    gap            : 30px;
+    display        : none;
+}
+
+.player_one_number_content{
+    background     : white;
+    border-radius  : 20px;
+    padding        : 50px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    gap            : 30px;
+    /* display        : none; */
+}
+
+.player_one .input_one{
+    padding      : 12px;
+    text-align   : center;
+    font-size    : 16px;
+    font-weight  : 600;
+    border       : 1px solid orangered;
+    border-radius: 8px;
+}
+.player_one .number_one{
+    padding       : 10px 30px;
+    background    : orangered;
+    border        : 2px solid orangered;
+    border-radius : 8px;
+    transition    : all linear .3s;
+    font-size     : 16px;
+    font-weight   : 600;
+    text-transform: capitalize;
+    color         : white;
+}
+.player_one .number_one:hover{
+    background : white;
+    color      : orangered;
+}
+.player_one .number_one:active{
+    scale : 1.1;
+}
+
+ /* ====== player one input css end ====== */
+ /* ====== player two input css start ==== */
+
+.show1{
+    font-size     : 43px;
+    font-weight   : 700;
+    font-family   : "Source Code Pro", monospace;
+    color         : orangered;
+    text-transform: capitalize;
+}
+.error3{
+    font-size     : 16px;
+    font-weight   : 500;
+    font-family   : "Source Code Pro", monospace;
+    color         : red;
+    text-transform: capitalize;
+
+}
+
+.player_two_number_content{
+    background     : white;
+    padding        : 50px;
+    border-radius  : 20px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    gap            : 30px;
+
+}
+.player_two_number{
+    background       : url(../images/guessbackground.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    width            : 100%;
+    height           : 100vh;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    flex-direction   : column;
+    gap              : 30px;
+    display          : none;
+}
+.player_two .input_two{
+    padding       : 12px;
+    text-align    : center;
+    font-size     : 16px;
+    font-weight   : 600;
+    border        : 1px solid orangered;
+    border-radius : 8px;
+}
+.player_two .number_two{
+    padding      : 10px 30px;
+    background   : orangered;
+    border       : 2px solid orangered;
+    border-radius: 8px;
+    transition   : all linear .3s;
+    font-size    : 16px;
+    font-weight  : 600;
+    color        : white;
+}
+.player_two .number_two:hover{
+    background : white;
+    color      : orangered;
+}
+.player_two .number_two:active{
+    scale : 1.1;
+}
+/* ===== player two input css end ==== */
+/* ===== winner css start ============ */
+
+.winner{
+    min-width         : 100%;
+    min-height        : 100vh;
+    background        : url(../images/RbCKrf8.gif);
+    background-repeat : no-repeat;
+    background-size   : cover;
+    position          : fixed;
+    display           : flex;
+    justify-content   : space-around;
+    align-items       : center;
+    flex-direction    : column;
+    display           : none;
+}
+
+.show2{
+    font-size     : 43px;
+    font-weight   : 700;
+    font-family   : "Source Code Pro", monospace;
+    color         : white;
+    text-align    : center;
+    text-transform: capitalize;
+    opacity       : 0;
+    animation     : animation 1s linear forwards;
+}
+@keyframes animation{
+    0%{
+        opacity  : 0;
+        transform: rotateY('90deg');
+        filter   : blur(10px);
+    }
+    100%{
+        opacity  : 1;
+        transform: rotateY('0deg');
+        filter   : blur(0);
+    }
+} 
+.tryButton{
+    width        : 120px;
+    height       : 50px;
+    background   : white;
+    color        : orangered;
+    padding      : 5px;
+    font-size    : 20px;
+    font-weight  : 600;
+    border       : none;
+    border-radius: 8px;
+    opacity      : 0;
+    animation    : try 1s linear forwards;
+}
+@keyframes try{
+    0%{
+        opacity : 0;
+        filter  : blur(10px);
+    }
+    100%{
+        opacity : 1;
+        filter  : blur(0);
+    }
+}
+.tryButton:active{
+    scale : 1.2;
+}
+ /* ====== winner css part end ======== */
+
+
+
+

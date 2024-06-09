@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOBOLO-the guessing game </title>
+    <link rel="icon" href="images/players.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ==== welcome page start ==== -->
+  <div class="first_page">
+      <div class="welcomePage_video">
+        <video autoplay muted loop>
+            <source src="images/numbers.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="content">
+        <div class="heading">
+            <h1>Welcome to <span>TOBOLO - THE GUESSING GAME</span></h1>
+        </div>
+        <button class="start">PLAY</button>
+       </div>
+  </div>
+  <!-- ==== welcome page end ====== -->
+  <!-- ==== name page start ====== -->
+ 
+    <div class="player_one_name">
+        <h2>Player One Name</h2>
+        <input class="nameOne" type="text" placeholder="ENTER YOUR NAME">
+        <button class="buttonOne">NEXT</button>
+        <p class="error"></p>
+    </div>
+    
+    
+    <div class="player_two_name">
+        <h2>Player Two Name</h2>
+        <input class="nameTwo" type="text" placeholder="ENTER YOUR NAME">
+        <button class="buttonTwo">NEXT</button>
+        <p class="error1"></p>
+    </div>
+    <!-- ===== name page end ===== -->
+    <!-- ===== player one number insert page start==== -->
+   <div class="player_one_number">
+      <div class="player_one_number_content">
+         <h3 class="show"></h3>
+         <p class="error2"></p>
+  
+         <div class="player_one">
+            <input class="input_one" type="number" placeholder="Enter your number">
+            <button class="number_one">Insert</button>
+         </div>
+      </div>
+   </div>
+   <!-- ===== player one number insert page end==== -->
+
+   <!-- ===== player two number insert page start==== -->
+
+   <div class="player_two_number">
+      <div class="player_two_number_content">
+        <h3 class="show1"></h3>
+        <p class="error3"></p>
+        <div class=" player_two">
+          <input class="input_two" type="number" placeholder="Enter your number">
+          <button class="number_two">guess</button>
+        </div>
+      </div>
+   </div>
+   <!-- ===== player two number insert page endt==== -->
+   <!-- ===== winner part strat=== -->
+    <div class="winner">
+      <h3 class="show2"></h3>
+      <button class="tryButton"><i class="fa-solid fa-rotate-right"></i></button>
+    </div>
+    <!-- === winner part end ====== -->
+
+   <script src="js/script.js"></script> 
+</body>
+</html>
