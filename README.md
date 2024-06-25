@@ -1,7 +1,7 @@
 <h1>TOBOLO, THE GUESSING GAME </h1>
 
 <h2>Overview : </h2>
-<h5>It is a very simple guessing game. there are two players. First player will give a number between 0-10. Second player have to guess what was the number. In this case, second player get five chances to guess.</h5>
+<h5>It is a very simple guessing game. There are two players. First player will give a number between 0-10. Second player have to guess what was the number. In this case, second player get five chances to guess.</h5>
 
 
 <h3>Tools : </h3>
